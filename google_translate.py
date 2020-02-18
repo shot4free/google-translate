@@ -3,10 +3,10 @@
 import json
 from apiclient.discovery import build
 
-query='This is a test to translate english to polish'
+query = str(input('Provide some text '))
 target_language = 'pl'
 
-service = build('translate','v2',developerKey='')
+service = build('translate','v2',developerKey='XXXXX')
 
 collection = service.translations()
 
